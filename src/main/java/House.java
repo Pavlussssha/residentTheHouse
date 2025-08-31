@@ -32,7 +32,7 @@ public class House {
     public List getAdults() {
         List<String> adults = new ArrayList<>();
         for(Map.Entry<String, Integer> entry : residents.entrySet()) {
-            if(entry.getValue() > 18){
+            if(entry.getValue() >= 18){
                 adults.add(entry.getKey());
             }
         }
